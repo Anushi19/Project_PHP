@@ -34,7 +34,7 @@ $query="Update details set LastName=IF(LENGTH('$lname')=0,LastName, '$lname'),Ad
 
 $result=mysql_query($query) or die("Query Failed");
 
-echo "<table bgcolor=pink bordercolor=red align=center border=10 cellsapcing=3 cellpadding=5 ><tr><th colspan=7><h1>Details Table
+echo "<table bgcolor=pink bordercolor=red align=center border=10 cellsapcing=3 cellpadding=5 ><tr><th colspan=9><h1>Details Table
 <tr><th>FirstName<th>LastName<th>Address<th>DOB<th>Password<th>Gender<th>Country<th>Link1<th>Link2";
 
 $query2="select * from Details";
